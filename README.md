@@ -10,7 +10,7 @@ count the number of occurrences of each unique element.
 1) Solve this with an O(N) algorithm
 2) Solve this with a better-than-O(N) algorithm and analyse its time complexity.
 
-##The chosen solutions
+## The chosen solutions
 The first solution simply maintains a linked list of unique elements encountered while traversing the input along
 with their frequency. This algorithm is linear in time complexity as it gathers the information via visiting each element.
 
@@ -19,7 +19,7 @@ last occurrence of the currently checked element in the input. The search only h
 been visited yet. This can only be used because the input array is already sorted. The algorithm assumes that the order
 is ascending and the elements comparator function is similar to the Java library Comparator implementations.
 
-##Benchmarks
+## Benchmarks
 The results below were taken when running on my laptop so they are not interesting in terms of absolute value but in
 comparison to the algorithms.
 
@@ -35,7 +35,7 @@ C test: random, up to 75 characters
 
 The maximum number of characters will
 
-###Sample results
+### Sample results
 Basic test run time with O(n) algo:  309us
 Basic test run time with O(log n) algo:  228us
 
@@ -57,13 +57,13 @@ Basic test run time with O(log n) algo:  228us
 5000 element B test run time with O(log n) algo:  4463us
 5000 element C test run time with O(log n) algo:  3053us
 
-###Result notes
+### Result notes
 
 It is visible that if the number of characters are higher than each algorithm runs a bit slower as it needs more
 administration/searches. The main take away from the results are still that if the input is getting longer then the
 non-linear algorithm works faster than the linear one.
 
-###Remarks
+### Remarks
 Please note that the the tests are using Junit4 style test at the moment so you will need to add the libraries to your
 project to run the tests.
 
