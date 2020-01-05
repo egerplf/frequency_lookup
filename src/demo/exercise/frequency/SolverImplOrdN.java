@@ -1,6 +1,8 @@
 package demo.exercise.frequency;
 
-import java.util.*;
+
+import java.util.Iterator;
+import java.util.LinkedList;
 
 public class SolverImplOrdN<E extends Comparable> implements Solver<E> {
 
